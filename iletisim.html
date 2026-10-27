@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+</head>
+<body>
+    <header style="background-color: orange; border: 1px solid orangered; border-radius: 10px; padding: 10px;">
+        <h1 style="color: white;">İletişim</h1>
+        <nav style="color: white; background-color: #e09200; border-radius: 5px; padding: 5px; width: 330px;">
+            <a href="index.html" style="padding-right: 20px;">Ana Sayfa</a>
+            <a href="hakkimda.html" style="padding-right: 20px;">Hakkımda</a>
+            <a href="hobilerim.html" style="padding-right: 20px;">Hobilerim</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </header>
+    <main>
+        <div style="background-color: #ffce89; border: 1px solid orange; border-radius: 10px; padding: 10px; margin-top: 10px;">
+            <fieldset>
+                <legend>İletişim Formu</legend>
+                <form>
+                    <p>
+                        <label for="name">Ad</label><br>
+                        <input type="text" id="name" name="name" required minlength="2">
+                    </p>
+                    <p>
+                        <label for="email">E-posta</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="content">Konu</label><br>
+                        <select id="content" name="content" required>
+                            <option value="">Seçiniz</option>
+                            <option value="soru">Soru</option>
+                            <option value="öneri">Öneri</option>
+                            <option value="şikayet">Şikayet</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="message">Mesaj</label><br>
+                        <textarea id="message" name="message" required maxlength="500"></textarea>
+                    </p>
+                    <p>
+                        <label for="howarrive">Nasıl ulaştınız?</label><br>
+                        <input type="radio" id="search" name="howarrive" value="search" required>
+                        <label for="search">Arama Motoru</label><br>
+                        <input type="radio" id="social" name="howarrive" value="social">
+                        <label for="social">Sosyal Medya</label><br>
+                    </p>
+                    <p>
+                        <label for="number">Telefon Numarası</label><br>
+                        <input type="number" id="number" name="number" pattern="[0-9]{5}-[0-9]{3}-[0-9]{4}" title="05xx-xxx-xxxx">
+                    </p>
+                    <p>
+                        <label for="color">Renk</label><br>
+                        <input type="color" id="color" name="color">
+                    </p>
+                    <p>
+                        <input type="submit" value="Gönder">
+                        <input type="reset" value="Temizle">
+                    </p>
+                </form>
+            </fieldset>
+        </div>
+    </main>
+</body>
+</html>
